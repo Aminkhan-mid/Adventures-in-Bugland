@@ -36,16 +36,20 @@ nav .title{
 nav .nav-list{
     display: flex;
     gap: 1em;
-    cursor: pointer;
     font-size: 0.75rem;
 }
 
+.nav-list a{
+    text-decoration: none;
+    color: #0e0e0e;
+    cursor: pointer;
+}
 /* *********** */
 /*   Header    */
 /* *********** */
 
 header{
-    background-image: url(./ruin.gif);
+    background-image: url(./bugImg/ruin.gif);
     background-repeat: no-repeat;
     background-size:cover;
     width: 100%;
