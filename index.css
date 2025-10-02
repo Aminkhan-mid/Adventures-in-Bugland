@@ -18,6 +18,10 @@ nav{
     padding: 1em;
     color: #0e0e0e;
 }
+nav .pokemonGif{
+    width: 40px;
+    height: 40px;
+}
 nav .title{
     font-weight: bold;
     font-family: 'Roboto', sans-serif;     
@@ -48,10 +52,79 @@ header{
     align-items: flex-start;
     padding: 1em;
     text-shadow: 4px 4px 10px black;
+    margin-bottom: 2em;
 }
 header h1{
     line-height: 108%;
 }
 header p{
     line-height: normal;
+}
+
+/* *********** */
+/*  Blogs Post */
+/* *********** */
+main{
+    margin: 1em;
+    width: 90%;
+}
+section img{
+    object-fit: contain;
+}
+section{
+    height: fit-content;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    overflow: hidden;
+}
+section span{
+    line-height: 1.5;
+    padding: 1em;
+    margin: 0;
+}
+
+/***********/
+/* Button  */
+/**********/
+button{
+    border: none;
+    background-color: transparent;
+    display: block;
+    margin: 2em auto;
+}
+button a{
+
+    color: #0e0e0e;
+}
+
+/* *********** */
+/*   Footer    */
+/* *********** */
+
+footer{
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 105px;
+}
+footer p, span{
+    padding: 0.1em;
+}
+footer p{
+    color: #ECECEC;
+    font-size: 0.75rem;
+    line-height: 108%;
+    font-weight: bold;
+}
+footer span{
+    color: #D7D7D7;
+    font-size: 0.75rem;
+    line-height: 125%;
 }
