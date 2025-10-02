@@ -1,0 +1,177 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ffffff;
+}
+
+/* *********** */
+/*   NAV BAR   */
+/* *********** */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dc6141;
+    padding: 1em;
+    color: #0e0e0e;
+    border-bottom:5px solid #0e0e0e;
+}
+.pokeDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav .pokemonGif{
+    width: 50px;
+    height: 50px;
+}
+nav .title{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;     
+    font-size: 0.846rem;     
+    padding-left: 10px;
+}
+nav .nav-list{
+    display: flex;
+    gap: 1em;
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+.nav-list a{
+text-decoration: none;
+    color: #0e0e0e;
+}
+
+/* *********** */
+/*   Header    */
+/* *********** */
+
+
+header{
+    width: 100%;
+    color:#151515 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+.headerGif{
+    background-image: url(./ruin.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    margin: 1.6em 0;
+}
+header h1{
+    line-height: 108%;
+    margin:0.5em 0;
+}
+header strong{
+    margin: 1em 0;
+    display: block;
+}
+header p{
+line-height: 1.5;
+margin: 0.6em 0;
+}
+
+/********/
+.recentpost-header{
+    text-align: center;
+    font-weight: bolder;
+}
+/********/
+
+
+
+/* *********** */
+/*  Blogs Post */
+/* *********** */
+main{
+    margin: 1em;
+
+}
+section img{
+    object-fit: contain;
+    border-radius: 0.2em;
+}
+section{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0;
+    margin-bottom: 1em;
+    overflow: hidden;
+
+}
+section .blog-words{
+    color: #505050;
+}
+section span{
+    line-height: 1.5;
+    padding: 1em;
+    margin: 0;
+}
+
+/***********/
+/* BUTTONS  */
+/**********/
+button{
+    border: none;
+    background-color: transparent;
+    display: block;
+    margin: 2em auto;
+}
+button a{
+
+    color: #0e0e0e;
+}
+
+/* *********** */
+/*   FOOTER    */
+/* *********** */
+
+footer{
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 105px;
+}
+footer p, span{
+    padding: 0.1em;
+}
+footer p{
+    color: #ECECEC;
+    font-size: 0.75rem;
+    line-height: 108%;
+    font-weight: bold;
+}
+footer span{
+    color: #D7D7D7;
+    font-size: 0.75rem;
+    line-height: 125%;
+}
+
+/* *********** */
+/*   MEDIA QUERIES  */
+/* *********** */
+
+
+@media (max-width:262px){
+    header{
+        height: fit-content;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
