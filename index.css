@@ -5,7 +5,6 @@
 }
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    background-color:lightgoldenrodyellow;
 }
 
 /* *********** */
@@ -89,6 +88,7 @@ section{
     border-radius: 1em;
     overflow: hidden;
     box-shadow: 5px 5px 0px black;
+    background-color: lightgoldenrodyellow;
 }
 section span{
     line-height: 1.5;

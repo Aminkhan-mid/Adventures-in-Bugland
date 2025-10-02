@@ -8,3 +8,5 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
         let gif =  data.sprites.versions["generation-v"]["black-white"].animated.front_default || data.sprites.front_default
         document.getElementById("pokemon").innerHTML = `<img class="pokemonGif" src="${gif}">`
     })
+
+
