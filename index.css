@@ -19,7 +19,6 @@ nav{
     color: #0e0e0e;
 }
 .pokeDiv{
-    margin-right: -5em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,7 +31,7 @@ nav .title{
     font-weight: bold;
     font-family: 'Roboto', sans-serif;     
     font-size: 0.846rem;     
-
+    padding-left: 10px;
 }
 nav .nav-list{
     display: flex;
@@ -63,9 +62,6 @@ header{
 header h1{
     line-height: 108%;
 }
-header p{
-    line-height: normal;
-}
 
 /* *********** */
 /*  Blogs Post */
@@ -87,6 +83,7 @@ section{
     margin-bottom: 1em;
     border-radius: 1em;
     overflow: hidden;
+    box-shadow: 5px 5px 0px black;
 }
 section span{
     line-height: 1.5;
@@ -133,4 +130,18 @@ footer span{
     color: #D7D7D7;
     font-size: 0.75rem;
     line-height: 125%;
+}
+
+/* *********** */
+/*   MEDIA QUERIES  */
+/* *********** */
+
+
+@media (max-width:262px){
+    header{
+        height: fit-content;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
