@@ -13,8 +13,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#FF7F7F",
-  "background_color": "#FFE5E5",
+  "theme_color": "#F5AFAF",
+  "background_color": "#FFF0F0",
   "display": "standalone",
   "orientation": "portrait",
   "description": "A fun gamified adventure in Bugland!"
