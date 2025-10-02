@@ -8,7 +8,7 @@ body{
 }
 
 /* *********** */
-/*    NAV BAR     */
+/*   NAV BAR   */
 /* *********** */
 nav{
     display: flex;
@@ -18,7 +18,6 @@ nav{
     padding: 1em;
     color: #0e0e0e;
 }
-
 nav .title{
     font-weight: bold;
     font-family: 'Roboto', sans-serif;     
@@ -32,3 +31,27 @@ nav .nav-list{
     font-size: 0.75rem;
 }
 
+/* *********** */
+/*   Header    */
+/* *********** */
+
+header{
+    background-image: url(./ruin.gif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 293px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1em;
+    text-shadow: 4px 4px 10px black;
+}
+header h1{
+    line-height: 108%;
+}
+header p{
+    line-height: normal;
+}
