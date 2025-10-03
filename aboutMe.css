@@ -77,7 +77,16 @@ nav .nav-list{
 }
 .greet{
     width: 320px;
-    padding: 0 1em;
+    padding: 1em;
+}
+
+hr{
+    margin: 0.8em 0;
+    color: white;
+}
+h1{
+    line-height: 108%;
+    margin:0.5em 0;
 }
 
 /* *********** */
@@ -103,10 +112,7 @@ header{
     height: 200px;
     margin: 1.6em 0;
 }
-header h1{
-    line-height: 108%;
-    margin:0.5em 0;
-}
+
 header strong{
     margin: 1em 0;
     display: block;
@@ -207,5 +213,73 @@ footer span{
     }
     nav{
         flex-direction: column;
+    }
+}
+@media (min-width:500px) {
+       .headerGif{
+        height: 20em;
+    }
+    .profile-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center; 
+    }
+    .profileDiv{
+        display: block;
+    }
+}
+@media (min-width:853px) {
+    header .head-intro{
+        padding: 0 2.9em;
+    }
+    header .headerGif{
+        height: 30em;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+    .profile-container{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .profileDiv{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+    .greet{
+        width: 600px;
+        margin-left: 4em;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width:973px) {
+     header .head-intro{
+        padding: 0 2.9em;
+        width: 980px;
+        display: block;
+        margin: auto;
+    }
+        header .headerGif{
+            width: 100%;
+            margin: auto;
+    }
+}
+
+@media (min-width:1700px) {
+     header .headerGif{
+
+        width: 50%;
+        margin: auto;
     }
 }

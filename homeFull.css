@@ -175,3 +175,40 @@ footer span{
         flex-direction: column;
     }
 }
+@media (min-width:500px) {
+       .headerGif{
+        height: 20em;
+    }
+}
+@media (min-width:853px) {
+    header .head-intro{
+        padding: 0 2.9em;
+    }
+    header .headerGif{
+        height: 30em;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+}
+
+@media (min-width:973px) {
+     header .head-intro{
+        padding: 0 2.9em;
+        width: 980px;
+    }
+        header .headerGif{
+            width: 100%;
+            margin: auto;
+    }
+}
+
+@media (min-width:1700px) {
+     header .headerGif{
+
+        width: 50%;
+        margin: auto;
+    }
+}

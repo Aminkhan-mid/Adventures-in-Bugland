@@ -72,10 +72,11 @@ header h1{
 /* *********** */
 main{
     margin: 1em;
-
 }
-section img{
-    object-fit: contain;
+
+.blog-image{
+    height: 180px;
+    width: 100%;
 }
 section{
     height: fit-content;
@@ -85,9 +86,9 @@ section{
     justify-content: end;
     margin: 0;
     margin-bottom: 1em;
-    border-radius: 1em;
+    border-radius: 0.5em;
     overflow: hidden;
-    box-shadow: 5px 5px 0px black;
+    box-shadow: 4px 4px 0px black;
     background-color: lightgoldenrodyellow;
 }
 section span{
@@ -149,4 +150,29 @@ footer span{
     nav{
         flex-direction: column;
     }
+}
+
+@media (min-width:536px) {
+    .section-wraper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+}
+@media (min-width:770px) {
+    .section-wraper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section{
+        width: 350px;
+        margin: auto;
+    }
+}
+@media (min-width:572px) {
+
+    header p,
+    header h1{
+        width: 550px;
+    }
+
 }
