@@ -151,12 +151,30 @@ footer span{
         flex-direction: column;
     }
 }
-
+@media (min-width:460px) {
+    section{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width:534px) {
+    section{
+        width: 100%;
+    }
+}
 @media (min-width:536px) {
     .section-wraper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
+    }
+}
+@media (min-width:572px) {
+
+    header p,
+    header h1{
+        width: 550px;
     }
 }
 @media (min-width:770px) {
@@ -167,12 +185,7 @@ footer span{
         width: 350px;
         margin: auto;
     }
-}
-@media (min-width:572px) {
-
-    header p,
-    header h1{
-        width: 550px;
+    header{
+        background-position: 50%;
     }
-
 }
